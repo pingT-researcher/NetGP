@@ -1,4 +1,5 @@
-This project provides various models and data processing tools, including the NetGP model, deep learning and machine learning comparison experiments, as well as data preprocessing utilities. The code is organized into four main modules: Deal_Datas, NetGP_Model, Other_DL, and Other_ML. Each module implements specific functions for data processing, model training, and evaluation.
+###NetGP
+#This project provides various models and data processing tools, including the NetGP model, deep learning and machine learning comparison experiments, as well as data preprocessing utilities. The code is organized into four main modules: Deal_Datas, NetGP_Model, Other_DL, and Other_ML. Each module implements specific functions for data processing, model training, and evaluation.
 
 Environment Setup
 This project runs in the following environment:

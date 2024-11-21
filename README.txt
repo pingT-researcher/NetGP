@@ -1,5 +1,5 @@
-# NetGP
-# This project provides various models and data processing tools, including the NetGP model, deep learning and machine learning comparison experiments, as well as data preprocessing utilities. The code is organized into four main modules: Deal_Datas, NetGP_Model, Other_DL, and Other_ML. Each module implements specific functions for data processing, model training, and evaluation.
+NetGP
+This project provides various models and data processing tools, including the NetGP model, deep learning and machine learning comparison experiments, as well as data preprocessing utilities. The code is organized into four main modules: Deal_Datas, NetGP_Model, Other_DL, and Other_ML. Each module implements specific functions for data processing, model training, and evaluation.
 
 Environment Setup
 This project runs in the following environment:
@@ -54,4 +54,15 @@ This module is used for machine learning model comparison experiments. The relev
 Usage
 Configure paths and parameters: Before running the models, ensure that you have configured the paths and model parameters according to the project’s requirements.
 Run the models: Run the main.py or ML.py files to start training, testing, and prediction processes for the respective models.
+
+The datasets used in this study are partially available at https://doi.org/10.6084/m9.figshare.26495956.v1. The specific file formats are described as follows:
+P.txt*: These files contain the selected feature data.
+gene_trans_*: These files represent the processed transcriptomic data.
+*_effect.txt: These files contain SNP data considering only the SNP effect.
+random_index_*: These files provide the sample indices for each phenotype, ensuring uniform sample indexing across different models.
+gene_re_*: These files contain the extracted gene network data.
+Above, we have provided two processed phenotype datasets: HeadingDate and FT10.
+We also provide the unprocessed SNP dataset from RiceVarMap: hz.012.10W_match.txt and the transcriptomic data: all_Rpkm_samplename_match.txt, as well as the PCA processed data: hz.012.10W_PCA.tsv, and the LD processed data, all of which are located in the folder RiceVarMap.
+
+
 

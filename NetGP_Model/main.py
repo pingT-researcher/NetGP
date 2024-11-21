@@ -16,6 +16,10 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 torch.set_default_tensor_type(torch.DoubleTensor)
 
 if __name__ == "__main__":
+    # HeadingDate lr=0.3 bach_size=32 step_size = 20
+    # FT10 lr = 0.2  bach_size=32  step_size = 25
+
+    
     # Phenotype name, which might represent a certain biological feature to predict.
     phenos = 'HeadingDate'
     # Name of the model.

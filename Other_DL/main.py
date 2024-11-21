@@ -11,7 +11,6 @@ from DeepGS import DeepGS
 from DNNGP import DNNGP
 from GenNet import GenNet
 from EarlyStopping import EarlyStopping
-
 # Set the device to 'cuda:0' if a CUDA-enabled GPU is available, otherwise use 'cpu'
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 # Set the default tensor type to torch.DoubleTensor. This means that tensors created later in the code
@@ -19,6 +18,16 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 torch.set_default_tensor_type(torch.DoubleTensor)
 
 if __name__ == "__main__":
+    #HeadingDate  DNNGP  snp    lr=1e-3     bs = 24   stps=25
+    #HeadingDate  DNNGP  trans  lr=1e-3   bs = 16   stps=35
+    #FT10   DNNGP  trans snp    lr=1e-3   bs = 24  stps = 25
+
+    #HeadingDate  DeepGS  snp  trans  lr=1e-3     bs = 16   stps=30
+    #FT10   DeepGS  trans snp    lr=1e-3   bs = 24   stps = 25
+
+    #HeadingDate  GenNet snp  trans  lr=1e-3     bs = 24   stps=30
+    #FT10   GenNet       snp    lr=1e-3   bs = 32   stps = 25
+    
     # Define a variable representing the phenotype. It might correspond to a certain biological feature or trait.
     # In this context, it could be used to identify specific groups of related data in the dataset.
     phenos = 'HeadingDate'

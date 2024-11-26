@@ -66,6 +66,11 @@ if __name__ == "__main__":
     out_all = np.array([])
 
     for num in [1]:
+    # Finding the right initial hyperparameters
+      # for  bach_size in [64,40,32,24,20,16]: 
+      # for step_size in [20,25,30,35,40]:  
+       # for lr in [0.3,0.2,0.1,0.01]:  
+        
         # Set learning rate.
         lr = 0.3
         # Set batch size.

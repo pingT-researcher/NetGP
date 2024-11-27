@@ -40,7 +40,7 @@ for i in [0, 1]:
     print(np.average(cors))
     # Find indices where the correlation is both statistically significant (p-value < 0.05) and stronger than the
     # average correlation.
-    result = np.where((ps < 0.1) & (cors > np.average(cors)))[0]
+    result = np.where((ps < 0.05) & (cors > np.average(cors)))[0]
 
     # Filter correlation coefficients based on the obtained indices.
     filtered_cors = cors[result]

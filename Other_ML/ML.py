@@ -13,7 +13,7 @@ global model
 modelname = 'LightBGM'
 # Call the 'Datasets' function (presumably defined elsewhere) to load the data and corresponding labels.
 # The 'phnoe' parameter is set to 'HeadingDate' and the 'labelpath' points to a specific CSV file.
-datas, labels = Datasets(type, phnoe='HeadingDate', labelpath='frns_frnt_match.csv')
+datas, labels = Datasets(type='snp', phnoe='HeadingDate', labelpath='frns_frnt_match.csv')
 # Extract the first element of the 'labels' array. The exact reason for this depends on the data structure and what
 # it represents.
 label = labels[0]

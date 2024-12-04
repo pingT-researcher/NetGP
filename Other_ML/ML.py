@@ -70,8 +70,8 @@ for j in range(1, 11):
     elif modelname == 'RRBLUP':
         # Create an instance of the Ridge regression model with a specific regularization parameter (alpha).
         # Fit the model using the training data and labels.
-        ridge_model = Ridge(alpha=0.1)
-        ridge_model.fit(train_data, train_label)
+        model = Ridge(alpha=0.1)
+        model.fit(train_data, train_label)
 
     # Use the trained model to make predictions on the test data.
     y_pred = model.predict(test_data)

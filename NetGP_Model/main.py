@@ -77,7 +77,7 @@ if __name__ == "__main__":
         bach_size = 32
         # Set step size for learning rate scheduler.
         step_size = 30
-        # Divide dataset into train and test sets, also get average label.
+        # Divide dataset into train and test sets
         trainloader, testloader = divide_Dataset(data, label, transcribe, num, 28, bach_size)
         # Create a NetGS model instance and move it to the device.
         mymodel = NetGP(genes_index, gene_re_index).to(device)

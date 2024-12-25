@@ -66,10 +66,14 @@ for j in range(1, 11):
         # and tolerance. Train the model using the training data and labels.
         model = SVR(kernel='linear', C=1.0, epsilon=0.2)
         model.fit(train_data, train_label)
-    
+    elif modelname == 'RRBLUP':
+        model = Ridge(alpha=0.1)
+        model.fit(train_data, train_label-np.average(train_label))
 
     # Use the trained model to make predictions on the test data.
     y_pred = model.predict(test_data)
+    if modelname == 'RRBLUP':
+        y_pred = y_pred + np.average(train_label)
     # Calculate the R-squared score to evaluate how well the model's predictions match the actual test labels.
     r2 = r2_score(test_label, y_pred)
     # Calculate the Pearson correlation coefficient between the actual test labels and the predicted values.

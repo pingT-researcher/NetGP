@@ -55,7 +55,7 @@ Usage
 Configure paths and parameters: Before running the models, ensure that you have configured the paths and model parameters according to the project’s requirements.
 Run the models: Run the main.py or ML.py files to start training, testing, and prediction processes for the respective models.
 
-The datasets used in this study are partially available at https://figshare.com/articles/dataset/NetGP/26495956/3  The specific file formats are described as follows:
+The datasets used in this study are partially available at https://figshare.com/articles/dataset/NetGP/26495956/4  The specific file formats are described as follows:
 P.txt*: These files contain the selected feature data.
 gene_trans_*: These files represent the processed transcriptomic data.
 *_effect.txt: These files contain SNP data considering only the SNP effect.
